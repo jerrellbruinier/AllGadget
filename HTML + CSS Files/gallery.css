@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 120px;
+    width: 100%;
+    background-color: #131313;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 40px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom : 2px solid white;
+    transition: .4s;
+}
+
+nav ul li.on a{
+    border-bottom : 2px solid white;
+}
+
+nav ul li.btn a{
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 9px 20px;
+    border-radius: 30px;
+    line-height: 1.4;
+}
+
+nav ul li.btn:hover a{
+    border: 1px solid white;
+    color: #131313;
+    background: white;
+    transition: .4s;
+}
+
+.products{
+    width: 100%;
+    padding: 50px 0px;
+    background: url('../Photos/stars.png');
+}
+
+.title h2{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.category h3{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 650px;
+    /* min-height: 500px; */
+}
+
+.card{
+    height: auto;
+    width: 355px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    border: 0px solid rgb(255, 255, 255);
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img{
+    width: 220px;
+}
+
+.card h5{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card h3{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 44px;
+    font-weight: 600;
+}
+
+.para p{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 27px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.para h1{
+    color: white;
+    font-size: 12px;
+}
+
+.card .button{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.totop h4{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.totop h4:hover{
+    color: rgb(151, 151, 151);
+    transition: .4s;
+}
+
+@media (max-width: 768px){
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+
+    .box{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 80px;
+        margin-right: 80px;
+        height: 2450px;
+        /* min-height: 500px; */
+    }
+    
+}

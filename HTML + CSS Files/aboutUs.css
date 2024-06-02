@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../Photos/aboutus.jpg");
+    background-color:#131313;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 40px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom : 2px solid white;
+    transition: .4s;
+}
+
+nav ul li.on a{
+    border-bottom : 2px solid white;
+}
+
+nav ul li.btn a{
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 9px 20px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav ul li.btn:hover a{
+    border: 1px solid white;
+    color: #131313;
+    background: white;
+    transition: .4s;
+}
+
+.title h2{
+    color: white;
+    font-size:68px;
+    margin-top:320px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h3{
+    color: white;
+    font-size:20px;
+    margin-top:2px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us{
+    display: flex;
+    height: 120vh;
+    background: url('../Photos/stars.png');
+    background-color: #131313;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading img{
+    width: 300px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.heading p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 40px;
+    text-align: justify;
+    width: 60%;
+}
+
+.heading h4{
+    color: white;
+
+}
+
+
+.box{
+    background: url('../Photos/stars.png');
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 300px;
+}
+
+.card{
+    height: auto;
+    width: 355px;
+    padding: 20px 35px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+h5{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 1px;
+}
+
+.pra p{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 27px;
+    /* margin-bottom: 25px; */
+    text-align: center;
+}
+
+.card .button{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+    
+    .title h2{
+        color: white;
+        font-size:38px;
+        margin-top:130px;
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .title h3{
+        color: white;
+        font-size:16px;
+        margin-top:2px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading p{
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+        line-height: 30px;
+        text-align: justify;
+        width: 75%;
+    }
+
+    .card{
+        height: auto;
+        width: 305px;
+        padding: 20px 35px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        margin: 20px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    h5{
+        color: white;
+        font-size: 30px;
+        margin-bottom: 1px;
+    }
+    
+    .pra p{
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 27px;
+        text-align: center;
+    }
+    
+}

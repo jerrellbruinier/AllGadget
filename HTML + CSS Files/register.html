@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="icon" href='../Photos/AGLOGO-balck.png'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type= "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    
+    <title>AllGadget</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="../Photos/AG LOGO.png" alt="LOGO" width="30" height="auto">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="findus.html">Find Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class = "btn"><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section>
+        <div class="box">
+                <form>
+                    <h2>Register</h2>
+                    <div class="input">
+                        <ion-icon name="happy-outline"></ion-icon>
+                        <input type="name" name="name" id="name">
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="input">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <input type="phone" name="phone" id="phone">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="input">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" id="password">
+                        <label for="password">Password</label>
+                    </div>
+                    <br>
+
+                    <div class="gender">
+                        Gender
+                        <div>
+                            <label for="gender"><input type="radio" name="gender" id="female"> Male</label>
+                            <label for="gender"><input type="radio" name="gender" id="male"> Female</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="validasi">
+                        <label for=""><input type="checkbox" name="checkbox" id="checkbox"> Agree to AllGadget <a href="#">Terms & Policy</a></label>
+                    </div>
+
+                    <button type="submit" onclick="validasi(event)">Register</button>
+                </form>
+        </div>
+    </section>
+
+    <div class="newsletter">
+        <h2>For latest information about us</h2>
+        <div class="form">
+            <input type="email" placeholder="Enter Your Email">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="konten">
+            <div class="foto">
+                <img src="../Photos/AllGadget.png" alt="foto">    
+            </div>
+            <p>AllGadget is a leading gadget store offering a wide range of innovative tech products. Our knowledgeable staff ensures customers find the perfect gadgets to suit their needs. We prioritize customer satisfaction with high-quality products and competitive prices. Experience top-notch service and the latest gadgets at AllGadget.</p>
+        </div>
+
+        <div class="konten">
+            <div>
+                <h4>Address</h4>
+                <p>1234 Web Street, Dummyville, Nowhere 56789</p>
+            </div>
+        </div>
+
+        <div class="konten">
+            <h4>Opening Hours</h4>
+            <p>Mon - Fri 10am - 10pm</p>
+            <p>Sat - Sun 11am - 11pm</p>
+        </div>
+
+        <div class="konten">
+            <h4>Contact Us</h4>
+            <p>021 - 123456</p>
+            <p>ContactUs@AllGadget.com </p>
+        </div>
+
+        <div class="konten">
+            <h4>Our Social Media</h4>
+            <p>Instagram : @AllGadgetIDN</p>
+            <p>TikTok : @AllGadgetIDN</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © 2023 AllGadget Inc. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
